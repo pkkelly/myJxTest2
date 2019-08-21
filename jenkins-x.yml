@@ -1,1 +1,7 @@
 buildPack: javascript
+pipelineConfig:
+  pipelines:
+    pullRequest:
+      postBuild:
+        preSteps:
+        - command: echo "##########"
